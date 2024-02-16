@@ -7,4 +7,6 @@ Created portfolio site to present information including my name, a recent photo 
 <img src="./assets/images/portfoliscreenshot.png">
 
 ## Links
+git@github.com:awigginsjr/02-Challenge.git
 
+https://awigginsjr.github.io/02-Challenge/
