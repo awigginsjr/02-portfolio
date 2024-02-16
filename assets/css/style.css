@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 2px;
+}
+
+/*set body to flex with direction added img*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: normal;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(../images/buffalobills2.png);
+    background-size: cover;
+}
+
+
+/*set header to flex & justified content & added colors*/
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #00338d;
+    color: #bfbfbf;
+    border: 2px solid #bfbfbf;
+}
+
+header h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 48px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*set header & font*/
+header nav {
+    padding-top: 20px;
+    margin-right: 20px;
+    float: right;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*removed bullet points*/
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: flex;
+    margin-left: 24px;
+}
+
+header li a {
+    display: block;
+    color: #bfbfbf;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+/*hover color*/
+li a:hover {
+    background-image: linear-gradient(200deg, #d93025 50%, #d93025 50%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    flex: 1 1 200px;
+}
+
+/*removed bullet points & set display*/
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+/*added img to hero-banner*/
+.hero-banner {
+    display: flex;
+    background-image: url(../images/buffalobills.png);
+    background-size: cover;
+    justify-content: right;
+    padding: 30px 30px;
+    border: 3px solid #bfbfbf;
+    margin-bottom: 20px;
+}
+
+.hero-banner h2 {
+    border: 3px solid #00338d;
+    background-color: #bfbfbf;
+    color: #d93025;
+    padding: 5px 10px;
+}
+
+h3 {
+    align-items: center;
+    justify-content: center;
+}
+
+/* added glow/hover to img w/boarder */
+.glowing-border {
+    border: 2px solid #bfbfbf;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #d93025;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.glowing-border:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    background-color: #d93025
+}
+
+/* box style for sections */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px 10px;
+    border: 2px solid #bfbfbf;
+    background-color: #00338d;
+    text-align: center;
+    color: #bfbfbf;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.projects-section {
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px 10px;
+    border: 2px solid #bfbfbf;
+    background-color: #00338d;
+    text-align: center;
+    color: #bfbfbf;
+    margin-bottom: 20px;
+}
+
+.projects-section a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-section {
+    text-align: center;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px 10px;
+    border: 2px solid #bfbfbf;
+    background-color: #00338d;
+    color: #bfbfbf;
+    margin-bottom: 20px;
+}
+
+.contact-section address {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*hover color to contact info*/
+.contact-section address a:hover {
+    background-size: 100% 88%;
+    color: transparent #d93025;
+}
+
+/*removed bullet points and added normal font*/
+.contact-section address a {
+    display: flex;
+    color: #bfbfbf;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-style: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px 10px;
+    background-image: linear-gradient(200deg, #d93025 50%, #d93025 50%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    flex: 1 1 200px;
+}
+
+/*set footer to flex & justified content & added colors*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 48px;
+    background-color: #00338d;
+    color: #bfbfbf;
+    border: 2px solid #bfbfbf;
+}
+
+@media screen and (max-width: 768px) {
+
+    main,
+    nav {
+        flex-direction: column;
+    }
+}
